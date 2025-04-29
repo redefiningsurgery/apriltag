@@ -17,7 +17,7 @@ let package = Package(
       name: "apriltag",
       path: ".",                // root contains C sources & headers
       exclude: [],
-      publicHeadersPath: "apriltag",
+      publicHeadersPath: "include",
       cSettings: [.unsafeFlags(cFlags, .when(configuration: .release))]
     )
   ]
