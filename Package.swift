@@ -16,7 +16,7 @@ let package = Package(
     .target(
       name: "apriltag",
       path: ".",                // root contains C sources & headers
-      exclude: ["examples", "python", "CMakeLists.txt", "README.md"],
+      exclude: [],
       publicHeadersPath: "apriltag",
       cSettings: [.unsafeFlags(cFlags, .when(configuration: .release))]
     )
